@@ -4,13 +4,23 @@
 
 import React from 'react';
 import {View, Text} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import CustomPressable from './components/CustomPressable';
-import CustomButton from './components/Buttons/CustomButton';
+import CustomButton from './components/CustomButton';
+
+const IconTest = () => {
+  return (
+    <>
+      <Icon name={'refresh'} size={24} />
+      <Icon name={'play-arrow'} size={24} />
+    </>
+  );
+};
 
 const CustomButtonTest = () => {
   return (
-    <CustomButton text={'Button'} backgroundColor={'red'} />
+    <CustomButton backgroundColor={'red'} iconName={'refresh'} iconSize={18} />
   );
 };
 
@@ -32,6 +42,7 @@ export default function Playground() {
     <>
       {/* <CustomPressableTest /> */}
       <CustomButtonTest />
+      <IconTest />
     </>
   );
 }
