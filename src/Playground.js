@@ -6,6 +6,13 @@ import React from 'react';
 import {View, Text} from 'react-native';
 
 import CustomPressable from './components/CustomPressable';
+import CustomButton from './components/Buttons/CustomButton';
+
+const CustomButtonTest = () => {
+  return (
+    <CustomButton text={'Button'} backgroundColor={'red'} />
+  );
+};
 
 const CustomPressableTest = () => {
   return (
@@ -23,7 +30,8 @@ const CustomPressableTest = () => {
 export default function Playground() {
   return (
     <>
-      <CustomPressableTest />
+      {/* <CustomPressableTest /> */}
+      <CustomButtonTest />
     </>
   );
 }
