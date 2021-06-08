@@ -1,5 +1,5 @@
 /*
-  This file is used to test some components.
+  This file is used to test anything.
 */
 
 import React from 'react';
