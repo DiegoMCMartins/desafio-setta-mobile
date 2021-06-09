@@ -8,6 +8,15 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import CustomPressable from './components/CustomPressable';
 import CustomButton from './components/CustomButton';
+import PressableIcon from './components/PressableIcon';
+
+const PressableIconTest = () => {
+  return (
+    <>
+      <PressableIcon iconName={'play-arrow'} iconSize={24} backgroundColor={'red'} onPress={console.log} />
+    </>
+  );
+};
 
 const IconTest = () => {
   return (
@@ -43,6 +52,7 @@ export default function Playground() {
       {/* <CustomPressableTest /> */}
       <CustomButtonTest />
       <IconTest />
+      <PressableIconTest />
     </>
   );
 }
